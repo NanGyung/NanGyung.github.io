@@ -358,7 +358,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 74px;
+  padding-bottom: 42px;
 }
 
 .section-title h2 {
@@ -400,6 +400,10 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about .section-title {
+  padding-bottom: 74px;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -510,8 +514,12 @@ section {
   background-color: #0563bb;
 }
 
+.skills .section-title {
+  padding-bottom: 0;
+}
+
 .skills .row {
-  margin: 20px 0;
+  margin: 80px 0;
 }
 
 .skills .row .count-box i {

@@ -218,18 +218,31 @@
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
+  const swiperContainer = document.querySelectorAll('.col-lg-8');
+  const swipers = [];
+
+  [...swiperContainer].forEach((ele, idx) => {
+    const swiper = new Swiper('.portfolio-details-slider', {
+      speed: 400,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      }
+    });
+
+    swipers.push(swiper);
+
+    // const $appendButtons = document.querySelectorAll('.append-buttons .slide-link');
+    [...ele.querySelectorAll('.slide-link')].forEach((ele, idx2) => {
+      ele.addEventListener('click', function (e) {
+        swipers[idx].slideTo(idx2 + 1, 0);
+      });
+    });
   });
 
 

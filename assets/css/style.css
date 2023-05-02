@@ -844,13 +844,14 @@ section {
 .append-buttons {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .append-buttons .slide-link {
   border-radius: 2rem;
-  width: 140px;
+  width: 120px;
   padding: 1rem;
-  margin-right: 20px;
+  margin: 10px 20px;
   cursor: pointer;
   font-size: 14px;
   text-align: center;
@@ -861,6 +862,20 @@ section {
 .append-buttons .slide-link:hover {
   background-color: #0563bb;
   color: #fff;
+}
+
+.link-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  width: 70%;
+  justify-content: space-around;
+}
+
+.link-menu .link {
+  align-self: start;
+  font-size: 16px;
+  margin: 10px 18px;
 }
 
 /*--------------------------------------------------------------

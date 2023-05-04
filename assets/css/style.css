@@ -841,12 +841,6 @@ section {
   padding: 0;
 }
 
-.append-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-
 .append-buttons .slide-link {
   border-radius: 2rem;
   width: 120px;
@@ -1131,9 +1125,11 @@ section {
   color: #728394;
 }
 
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
+@media (width<= 768px) {
+  .email,
+  .phone {
+    margin-top: 20px;
+  }
 }
 
 .contact .info .email:hover i,

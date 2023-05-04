@@ -841,23 +841,6 @@ section {
   padding: 0;
 }
 
-.append-buttons .slide-link {
-  border-radius: 2rem;
-  width: 120px;
-  padding: 1rem;
-  margin: 10px 20px;
-  cursor: pointer;
-  font-size: 14px;
-  text-align: center;
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.25);
-  transition: all 0.4s;
-}
-
-.append-buttons .slide-link:hover {
-  background-color: #0563bb;
-  color: #fff;
-}
-
 .link-menu {
   display: flex;
   flex-wrap: wrap;

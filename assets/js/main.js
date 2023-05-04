@@ -223,12 +223,7 @@
 
   [...swiperContainer].forEach((ele, idx) => {
     const swiper = new Swiper('.portfolio-details-slider', {
-      speed: 400,
       loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
-      },
       pagination: {
         el: '.swiper-pagination',
         clickable: true
@@ -237,12 +232,25 @@
 
     swipers.push(swiper);
 
-    // const $appendButtons = document.querySelectorAll('.append-buttons .slide-link');
     [...ele.querySelectorAll('.slide-link')].forEach((ele, idx2) => {
       ele.addEventListener('click', function (e) {
         swipers[idx].slideTo(idx2 + 1, 0);
       });
     });
+
+    [...ele.querySelectorAll('.dropdown-item')].forEach((ele, idx3) => {
+      ele.addEventListener('click', function (e) {
+        swipers[idx].slideTo(idx3 + 1, 0);
+
+        const target = e.target;
+        const selected = target.getAttribute('data-value');
+        const $button = document.querySelector('.dropdown-toggle');
+        $button.innerHTML = selected;
+
+      });
+    });
+
+
   });
 
 

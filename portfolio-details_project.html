@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="utf-8">
@@ -50,13 +50,39 @@
 
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
-              <div class="append-buttons d-flex flex-wrap justify-content-center mb-4">
-                <span class="slide-link">목표</span>
-                <span class="slide-link">기능정의서</span>
-                <span class="slide-link">프로세스</span>
-                <span class="slide-link">데이터베이스</span>
-                <span class="slide-link">소요기술</span>
+              <div class="btn-group d-sm-flex d-none mb-4" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="slide-link btn-check" name="btnradio" id="btnradio1" autocomplete="off"
+                  checked>
+                <label class="btn btn-outline-secondary" for="btnradio1">목표</label>
+
+                <input type="radio" class="slide-link btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio2">기능정의서</label>
+
+                <input type="radio" class="slide-link btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio3">프로세스</label>
+
+                <input type="radio" class="slide-link btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio4">데이터베이스</label>
+
+                <input type="radio" class="slide-link btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio5">소요기술</label>
               </div>
+
+              <div class="btn-group d-block d-sm-none mb-4">
+                <button type="button" id="dLabel" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  목표
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li class="slide-link dropdown-item" data-value="목표">목표</li>
+                  <li class="slide-link dropdown-item" data-value="기능정의서">기능정의서</li>
+                  <li class="slide-link dropdown-item" data-value="프로세스">프로세스</li>
+                  <li class="slide-link dropdown-item" data-value="데이터베이스">데이터베이스</li>
+                  <li class="slide-link dropdown-item" data-value="소요기술">소요기술</li>
+                </ul>
+              </div>
+
+
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
                   <img src="assets/img/portfolio/project/project5.jpg" alt="">
